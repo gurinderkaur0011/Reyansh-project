@@ -51,7 +51,7 @@ function speak(Emotion, Accuracy){
     window.speechSynthesis.speak(voice);
 }
 console.log(ml5.version);
-var model=ml5.imageClassifier("model.json", loaded);
+var model=ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/KA16eL9uT/model.json", loaded);
 function loaded(){
     console.log("Model is loaded");
 }
